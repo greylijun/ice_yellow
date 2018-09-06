@@ -1,0 +1,90 @@
+<view>
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:250px;">
+        <block wx:key="{{item}}" wx:for="{{imgUrls}}">
+            <swiper-item>
+                <navigator url="../online_sensation/detail/detail?id={{item.id}}" hover-class="navigator-hover">
+                    <image src="{{item.url}}" class="slide-image"/>
+                </navigator>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="weui-flex">
+        <view class="weui-flex__item">
+            <view class="index_title">网红同款</view>
+        </view>
+        <view>
+            <view class="index_more" bindtap="online_detail">查看更多 ></view>
+        </view>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item index_image" bindtap="showDetail">
+            <image src="https://gd3.alicdn.com/imgextra/i3/419672087/TB2Z.I.DoR1BeNjy0FmXXb0wVXa_!!419672087.jpg"></image>
+            <view class="_title">金属圆框眼镜架男女韩版复古超轻大脸全框眼镜架平光可配防蓝光</view>
+            <view class="weui-flex">
+                <view class="weui-flex__item _price">￥100</view>
+                <view class="_sale">已售：20件</view>
+            </view>
+        </view>
+        <view class="weui-flex__item index_image" bindtap="showDetail">
+            <image src="https://gd1.alicdn.com/imgextra/i1/419672087/TB2S_iOxByWBuNkSmFPXXXguVXa_!!419672087.jpg"></image>
+            <view class="_title">网红墨镜女圆脸2018新款OLLIE太阳镜女明星同款大框粉色网红眼镜</view>
+            <view class="weui-flex">
+                <view class="weui-flex__item _price">￥248</view>
+                <view class="_sale">已售：2件</view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex" style="margin-top:50px;">
+        <view class="weui-flex__item">
+            <view class="index_title">文艺复古</view>
+        </view>
+        <view>
+            <view class="index_more">查看更多 ></view>
+        </view>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item index_image" bindtap="showDetail">
+            <image src="https://gd1.alicdn.com/imgextra/i3/419672087/TB2pEBIFgaTBuNjSszfXXXgfpXa_!!419672087.jpg"></image>
+            <view class="_title">文艺复古平光镜圆形眼镜架女韩版潮流男款可配近视眼镜框防辐射潮</view>
+            <view class="weui-flex">
+                <view class="weui-flex__item _price">￥39</view>
+                <view class="_sale">已售：0件</view>
+            </view>
+        </view>
+        <view class="weui-flex__item index_image" bindtap="showDetail">
+            <image src="https://gd2.alicdn.com/imgextra/i1/419672087/TB24suKw98YBeNkSnb4XXaevFXa_!!419672087.jpg"></image>
+            <view class="_title">超轻复古小清新眼镜框女全框眼镜架男可配近视防辐射潮成品度数</view>
+            <view class="weui-flex">
+                <view class="weui-flex__item _price">￥68</view>
+                <view class="_sale">已售：2件</view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex" style="margin-top:50px;">
+        <view class="weui-flex__item">
+            <view class="index_title">型男必备</view>
+        </view>
+        <view>
+            <view class="index_more">查看更多 ></view>
+        </view>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item index_image" bindtap="showDetail">
+            <image src="https://gd4.alicdn.com/imgextra/i4/419672087/TB2b2nfy8yWBuNkSmFPXXXguVXa_!!419672087.jpg"></image>
+            <view class="_title">男士大框墨镜时尚太阳镜欧美大方型框网红开车快手网络直播眼镜男</view>
+            <view class="weui-flex">
+                <view class="weui-flex__item _price">￥98</view>
+                <view class="_sale">已售：10件</view>
+            </view>
+        </view>
+        <view class="weui-flex__item index_image" bindtap="showDetail">
+            <image src="https://gd4.alicdn.com/imgextra/i4/419672087/TB2l7yFy5OYBuNjSsD4XXbSkFXa_!!419672087.jpg"></image>
+            <view class="_title">2018新款偏光太阳镜男蛤蟆眼镜女潮人驾驶开车司机墨镜男士眼睛潮</view>
+            <view class="weui-flex">
+                <view class="weui-flex__item _price">￥98</view>
+                <view class="_sale">已售：125件</view>
+            </view>
+        </view>
+    </view>
+</view>

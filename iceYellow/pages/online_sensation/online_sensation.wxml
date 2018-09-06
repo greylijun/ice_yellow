@@ -1,0 +1,29 @@
+<!--pages/online_sensation/online_sensation.wxml-->
+<view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">网红同款</view>
+        <view class="weui-panel__bd">
+            <block wx:key="{{item}}" wx:for="{{tableData}}">
+                <navigator url="detail/detail?id={{item.id}}&image={{item.image}}&price={{item.price}}&title={{item.detail}}"
+                           class="weui-media-box weui-media-box_appmsg"
+                           hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{item.image}}"/>
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__desc _detail">{{item.detail}}</view>
+                        <view style="font-size=14px;color:red">{{item.price}}</view>
+                        <view class="weui-media-box__desc">
+                            <view class="weui-flex">
+                                <view class="weui-flex__item">
+                                    <view class="placeholder">{{item.payed}}</view>
+                                </view>
+                                <view>查看详情</view>
+                            </view>
+                        </view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

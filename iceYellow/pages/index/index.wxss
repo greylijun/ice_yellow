@@ -1,0 +1,45 @@
+.slide-image {
+    width: 100%;
+}
+
+.index_title {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.index_more {
+    margin: 10px;
+    font-size: 14px;
+    color: #AAAAAA;
+}
+
+.index_image {
+    margin: 0 10px 0 10px;
+    height: 120px;
+    font-size: 10px;
+}
+
+.index_image image {
+    width: 100%;
+    height: 100%
+}
+
+.index_image ._price {
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.index_image ._sale {
+    color: #AAAAAA;
+}
+
+.index_image ._title {
+     display: -webkit-box;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     word-wrap: break-word;
+     white-space: normal !important;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+ }
+

@@ -1,0 +1,11 @@
+/* pages/online_sensation/online_sensation.wxss */
+
+.page__bd ._detail {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
